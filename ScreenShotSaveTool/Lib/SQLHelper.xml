@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQLHelper</name>
+    </assembly>
+    <members>
+        <member name="T:SQLHelper.ConfigPathLocation">
+            <summary>
+            Config文件夹的位置 枚举
+            </summary>
+        </member>
+        <member name="F:SQLHelper.ConfigPathLocation.InExePath">
+            <summary>
+            Defines the InExePath.
+            </summary>
+        </member>
+        <member name="F:SQLHelper.ConfigPathLocation.InParentPath">
+            <summary>
+            Defines the InParentPath.
+            </summary>
+        </member>
+        <member name="T:SQLHelper.DbHelper`1">
+            <summary>
+            Defines the <see cref="T:SQLHelper.DbHelper`1" />.
+            </summary>
+            <typeparam name="T">.</typeparam>
+        </member>
+        <member name="F:SQLHelper.DbHelper`1.SqlSugarClient">
+            <summary>
+            Defines the SqlSugarClient.
+            </summary>
+        </member>
+        <member name="F:SQLHelper.DbHelper`1.log">
+            <summary>
+            Defines the log.
+            </summary>
+        </member>
+        <member name="F:SQLHelper.DbHelper`1._instance">
+            <summary>
+            Defines the _instance.
+            </summary>
+        </member>
+        <member name="F:SQLHelper.DbHelper`1.DbHost">
+            <summary>
+            Defines the DbHost.
+            </summary>
+        </member>
+        <member name="F:SQLHelper.DbHelper`1.ConfigPathLocation">
+            <summary>
+            Defines the ConfigPathLocation.
+            </summary>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SQLHelper.DbHelper`1"/> class.
+            </summary>
+        </member>
+        <member name="P:SQLHelper.DbHelper`1.DB">
+            <summary>
+            Gets the DB.
+            </summary>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetConfigFolder">
+            <summary>
+            获得配置文件夹目录.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetDbConfigFile">
+            <summary>
+            得到配置文件名称(包含全路径)。.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetDbServerHost">
+            <summary>
+            从配置文件中，读取mysql数据库服务器的主机地址。.
+            </summary>
+            <returns>字符串：主机地址.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetExeFolder">
+            <summary>
+            获得exe程序的运行目录.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetGuid">
+            <summary>
+            The GetGuid.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetParentFolder">
+            <summary>
+            获得exe程序目录的上级目录.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.Insert(`0)">
+            <summary>
+            插入.
+            </summary>
+            <param name="classType">The classType<see cref="!:T"/>.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.PrepareConfigPath">
+            <summary>
+            准备好config目录。如果目录不存在，就创建它。.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.QuerryReconTaskID(System.String)">
+            <summary>
+            The QuerryReconTaskID.
+            </summary>
+            <param name="id">The id<see cref="T:System.String"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.Singleton">
+            <summary>
+            The Singleton.
+            </summary>
+            <returns>The <see cref="T:SQLHelper.DbHelper`1"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.Insert(System.Collections.Generic.List{`0})">
+            <summary>
+            批量插入数据库.
+            </summary>
+            <param name="objs">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.Update(`0)">
+            <summary>
+            更新.
+            </summary>
+            <param name="classType">The classType<see cref="!:T"/>.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetDbContext">
+            <summary>
+            The GetDbContext.
+            </summary>
+            <returns>The <see cref="F:SQLHelper.DbHelper`1.SqlSugarClient"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.QueryClass(`0,System.Int32)">
+            <summary>
+            根据实体类查找
+            </summary>
+            <param name="querrtClass">需要查找的条件类</param>
+            <param name="count">需要的前几条数据</param>
+            <returns>根据数据库补全后的实体类</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.Query(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Int32)">
+            <summary>
+            根据条件查找符合条件的实体类.
+            </summary>
+            <param name="whereExpression">条件表达式.</param>
+            <param name="intTop">前N条.</param>
+            <returns>数据列表.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.PrintVersionAndTime">
+            <summary>
+            The PrintVersionAndTime.
+            </summary>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.AssemblyFileVersion">
+            <summary>
+            The AssemblyFileVersion.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.DbHelper`1.GetBuildDateTime">
+            <summary>
+            The GetBuildDateTime.
+            </summary>
+            <returns>The <see cref="T:System.DateTime"/>.</returns>
+        </member>
+        <member name="M:SQLHelper.Tool.CreateEntity(System.String,System.String,System.String,System.String)">
+            <summary>
+             
+            </summary>
+            <param name="entityName"></param>
+            <param name="nameSpace"></param>
+            <param name="path"></param>
+            <param name="ConnectionString"></param>
+        </member>
+        <member name="T:SQLHelper.SugarBase">
+            <summary>
+            Sugar ORM父类, 封装一些基本的操作
+            </summary>
+        </member>
+        <member name="P:SQLHelper.SugarBase.DB_ConnectionString">
+            <summary>
+            数据库链接字符串
+            </summary>
+        </member>
+        <member name="P:SQLHelper.SugarBase.DB">
+            <summary>
+            获取ORM数据库连接对象(只操作数据库一次的使用, 否则会进行多次数据库连接和关闭)
+            默认超时时间为30秒
+            默认为SQL Server数据库
+            默认自动关闭数据库链接, 多次操作数据库请勿使用该属性, 可能会造成性能问题
+            要自定义请使用GetIntance()方法或者直接使用Exec方法, 传委托
+            </summary>
+        </member>
+        <member name="M:SQLHelper.SugarBase.GetIntance(System.Int32,SqlSugar.DbType,System.Boolean)">
+            <summary>
+            获得SqlSugarClient(使用该方法, 默认请手动释放资源, 如using(var db = SugarBase.GetIntance()){你的代码}, 如果把isAutoCloseConnection参数设置为true, 则无需手动释放, 会每次操作数据库释放一次, 可能会影响性能, 请自行判断使用)
+            </summary>
+            <param name="commandTimeOut">等待超时时间, 默认为30秒 (单位: 秒)</param>
+            <param name="dbType">数据库类型, 默认为SQL Server</param>
+            <param name="isAutoCloseConnection">是否自动关闭数据库连接, 默认不是, 如果设置为true, 则会在每次操作完数据库后, 即时关闭, 如果一个方法里面多次操作了数据库, 建议保持为false, 否则可能会引发性能问题</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQLHelper.SugarBase.InitDB(System.Int32,SqlSugar.DbType,System.Boolean)">
+            <summary>
+            初始化ORM连接对象
+            </summary>
+            <param name="commandTimeOut">等待超时时间, 默认为30秒 (单位: 秒)</param>
+            <param name="dbType">数据库类型, 默认为SQL Server</param>
+            <param name="isAutoCloseConnection">是否自动关闭数据库连接, 默认不是, 如果设置为true, 则会在每次操作完数据库后, 即时关闭, 如果一个方法里面多次操作了数据库, 建议保持为false, 否则可能会引发性能问题</param>
+        </member>
+        <member name="M:SQLHelper.SugarBase.Exec``1(System.Func{SqlSugar.SqlSugarClient,``0},System.Int32,SqlSugar.DbType)">
+            <summary>
+            执行数据库操作
+            </summary>
+            <typeparam name="Result">返回值类型 泛型</typeparam>
+            <param name="func">方法委托</param>
+            <param name="commandTimeOut">超时时间, 单位为秒, 默认为30秒</param>
+            <param name="dbType">数据库类型, 默认为SQL Server</param>
+            <returns>泛型返回值</returns>
+        </member>
+        <member name="M:SQLHelper.SugarBase.ExecTran``1(System.Func{SqlSugar.SqlSugarClient,``0},System.Int32,SqlSugar.DbType)">
+            <summary>
+            带事务处理的执行数据库操作
+            </summary>
+            <typeparam name="Result">返回值类型 泛型</typeparam>
+            <param name="func">方法委托</param>
+            <param name="commandTimeOut">超时时间, 单位为秒, 默认为30秒</param>
+            <param name="dbType">数据库类型, 默认为SQL Server</param>
+            <returns>泛型返回值</returns>
+        </member>
+        <member name="P:SQLHelper.t_ScanTask.ExportStatus">
+            <summary>
+            导出状态（值：0待导出，1已导出）
+            </summary>
+        </member>
+        <member name="P:SQLHelper.t_tubes.ID">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.TubeNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.TubeSN">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.FocusSize">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.MaxPower">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.MaxmA">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.MaxkV">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.Circuit">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.Angle">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.Diameter">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.ThermalCapacity">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.CoolingPower">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.RotationRate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.Weight">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.MaximumCapacity">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.InstallTime">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:SQLHelper.t_tubes.State">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+    </members>
+</doc>
